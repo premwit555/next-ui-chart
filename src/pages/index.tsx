@@ -1,5 +1,6 @@
 import { Flex, HStack } from "@chakra-ui/react"
 import React from "react"
+import ChartHistroySideBar from "../components/ChartHistroy/ChartHistroySideBar"
 import NavigationChart from "./../components/Navigation"
 
 const Index = () => {
@@ -15,7 +16,10 @@ const Index = () => {
                     w='full'
                     borderRightColor='gray.100'
                     borderRightWidth={1}
-               />
+               >
+                    <ChartHistroySideBar />
+               </Flex>
+
                <Flex
                     As='main'
                     h='full'
